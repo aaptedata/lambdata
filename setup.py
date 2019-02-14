@@ -13,7 +13,7 @@ with open("README.md","r") as fh:
 
 setuptools.setup(
     name="lambdata-aaptecode",
-    version="0.0.2",
+    version="0.0.3",
     author="aaptecode",
     description="A collection of DS/ML/DL helper functions",
     long_description=LONG_DESCRIPTION,
