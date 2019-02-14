@@ -5,7 +5,7 @@ def train_validation_test_split(
     X, y, train_size=0.8, val_size=0.1, test_size=0.1, 
     random_state=None, shuffle=True):
 
-'''Splits the features and target data into train, validation and test sets'''
+    '''Splits the features and target data into train, validation and test sets'''
     from sklearn.model_selection import train_test_split   
     assert train_size + val_size + test_size == 1 # Error handling, confirm that this math works.
     
@@ -20,7 +20,7 @@ def train_validation_test_split(
 
 def conf_matrix_2d(y_test, y_pred):
 
-'''Delivers a confusion matrix for binary data'''
+    '''Delivers a confusion matrix for binary data'''
     assert len(y_test) == len(y_pred)
     matrix = pd.crosstab(y_test, y_pred, dropna=False, margins=True)
     matrix.rename(index={'0': 'Actual False', '1': 'Actual True'},
